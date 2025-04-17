@@ -1,36 +1,30 @@
-
-variable "openai_deployments" {
-  description = "(Optional) Specifies the deployments of the Azure OpenAI Service"
-  type = list(object({
-    name = string
-    model = object({
-      format  = string
-      name    = string
-      version = string
-    })
-    sku = object({
-      name     = string
-      capacity = number
-      # tier     = string
-    })
-  }))
-  default = [
-    {
-      name = "gpt-4o"
-      model = {
-        format  = "OpenAI"
-        name    = "gpt-4o"
-        version = "2024-08-06"
-      }
-      sku = {
-        name     = "Standard"
-        capacity = 100
-      }
-    }
-  ]
+variable "openai_model_deployment_name" {
+  description = "Specifies the name of the Azure OpenAI Service model"
+  type        = string
+  default     = "o3-mini"
 }
 
+variable "openai_model_deployment_version" {
+  description = "Specifies the version of the Azure OpenAI Service model"
+  type        = string
+  default     = "2025-01-31"
+}
+variable "openai_model_deployment_api_version" {
+  description = "Specifies the API version of the Azure OpenAI Service model"
+  type        = string
+  default     = "2024-12-01-preview"
 
+}
+variable "openai_model_deployment_sku_name" {
+  description = "Specifies the SKU name of the Azure OpenAI Service"
+  type        = string
+  default     = "GlobalStandard"
+}
+variable "openai_model_deployment_sku_capacity" {
+  description = "Specifies the SKU capacity of the Azure OpenAI Service"
+  type        = number
+  default     = 20
+}
 
 resource "azurerm_cognitive_account" "openai" {
   resource_group_name           = azurerm_resource_group.rg.name
@@ -42,6 +36,7 @@ resource "azurerm_cognitive_account" "openai" {
   public_network_access_enabled = true
   sku_name                      = var.openai_sku
   tags                          = local.default_tags
+
   identity {
     type = "SystemAssigned"
   }
@@ -55,25 +50,23 @@ resource "azurerm_cognitive_account" "openai" {
 }
 
 resource "azurerm_cognitive_deployment" "openai_deployments" {
-  for_each               = { for deployment in var.openai_deployments : deployment.name => deployment }
   cognitive_account_id   = azurerm_cognitive_account.openai.id
-  name                   = each.key
+  name                   = var.openai_model_deployment_name
   version_upgrade_option = "OnceNewDefaultVersionAvailable"
 
 
   model {
-    format  = each.value.model.format
-    name    = each.value.model.name
-    version = each.value.model.version
+    format  = "OpenAI"
+    name    = var.openai_model_deployment_name
+    version = var.openai_model_deployment_version
   }
 
   sku {
-    name     = each.value.sku.name
-    capacity = each.value.sku.capacity
-    # tier     = each.value.sku.tier
+    name     = var.openai_model_deployment_sku_name
+    capacity = var.openai_model_deployment_sku_capacity
   }
-
 }
+
 
 resource "azurerm_monitor_diagnostic_setting" "settings" {
   name                       = "${local.name_prefix}-openai-diagnostic"

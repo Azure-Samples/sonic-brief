@@ -1,15 +1,10 @@
-# DO NOT include azure-functions-worker in this file
-# The Python Worker is managed by Azure Functions platform
-# Manually managing azure-functions-worker may cause unexpected issues
-
-openai~=1.35.1
+openai==1.72.0
 python-dotenv==1.0.1
 requests
-azure-cosmos==4.8.0
 reportlab==4.2.5
-azure-functions
+azure-functions==1.23.0
+azure-cosmos==4.9.0
 azure-common==1.1.28
-azure-core==1.32.0
-azure-identity==1.16.1
-azure-storage-blob==12.19.0
-python-dotenv==1.0.1
+azure-core==1.33.0
+azure-identity==1.21.0
+azure-storage-blob==12.25.1

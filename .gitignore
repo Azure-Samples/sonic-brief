@@ -20,8 +20,9 @@ az_func_audio_processor/.serverless_plugins_cache/
 az_func_audio_processor/.serverless-state.json
 az_func_audio_processor/__pycache__
 az_func_audio_processor/.env
-# Python
+**.env
 
+# Python
 __pycache__/
 *.py[cod]
 *$py.class

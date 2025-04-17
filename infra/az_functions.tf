@@ -64,15 +64,19 @@ resource "azurerm_linux_function_app" "function_call_function_app" {
     AZURE_STORAGE_ACCOUNT_URL          = "https://${azurerm_storage_account.storage.name}.blob.core.windows.net"
     AZURE_STORAGE_RECORDINGS_CONTAINER = azurerm_storage_container.container.name
 
-    audio__accountName     = azurerm_storage_account.storage.name
-    audio__credential      = "managedidentity"
+    audio__accountName = azurerm_storage_account.storage.name
+    audio__credential  = "managedidentity"
+
+    # Azure Cosmos DB Configuration
     AZURE_COSMOS_DB_PREFIX = "voice_"
     AZURE_COSMOS_DB        = azurerm_cosmosdb_sql_database.voice_db.name
 
+    # Azure OpenAI Configuration
+    AZURE_OPENAI_API_VERSION = var.openai_model_deployment_api_version
+    AZURE_OPENAI_DEPLOYMENT  = var.openai_model_deployment_name
+    AZURE_OPENAI_ENDPOINT    = azurerm_cognitive_account.openai.endpoint
 
-    AZURE_OPENAI_API_VERSION          = var.openai_api_version
-    AZURE_OPENAI_DEPLOYMENT           = azurerm_cognitive_deployment.openai_deployments["gpt-4o"].model[0].name
-    AZURE_OPENAI_ENDPOINT             = azurerm_cognitive_account.openai.endpoint
+    # Azure Speech Services Configuration
     AZURE_SPEECH_CANDIDATE_LOCALES    = "en-US,zu-ZA,af-ZA"
     AZURE_SPEECH_DEPLOYMENT           = azurerm_cognitive_account.SpeechServices.name
     AZURE_SPEECH_MAX_SPEAKERS         = "2"

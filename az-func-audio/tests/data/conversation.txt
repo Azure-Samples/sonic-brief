@@ -1,0 +1,121 @@
+--- Speaker 1 ---
+  Hi Sam, good to see you again.
+  How have you been feeling since our last visit?
+
+--- Speaker 2 ---
+  Hey, it's been up and down but I'm managing.
+
+--- Speaker 1 ---
+  I'm glad to hear you're managing.
+  Any specific UPS or downs you'd like to talk about today?
+
+--- Speaker 2 ---
+  Well, I had a rough patch a few days ago, almost slipped back but I called my sponsor.
+
+--- Speaker 1 ---
+  That's a really positive step.
+  Sam reaching out shows a lot of strength.
+  How did that conversation with your sponsor help?
+
+--- Speaker 2 ---
+  He reminded me why I'm doing this and walked me through some breathing exercises.
+  It really helped.
+
+--- Speaker 1 ---
+  It's great to hear you have that support.
+  Let's make sure we build on that.
+  Have you been attending your support groups regularly?
+
+--- Speaker 2 ---
+  Yeah, I went to the last three meetings.
+  They're really helpful.
+
+--- Speaker 1 ---
+  That's wonderful.
+  Consistency is key.
+  And how about your new job?
+  How's it going?
+
+--- Speaker 2 ---
+  It's going well, it keeps me busy and my coworkers are nice.
+  It's a good distraction.
+
+--- Speaker 1 ---
+  That's fantastic to hear.
+  Stability with work can make a huge difference.
+  Any challenges you're facing at work that we can talk through?
+
+--- Speaker 2 ---
+  Sometimes the stress gets to me, but I'm managing with what we discussed about time management and taking breaks.
+
+--- Speaker 1 ---
+  Good.
+  Remember it's all about balancing work and self-care.
+  Have you been able to incorporate any new hobbies or activities?
+
+--- Speaker 2 ---
+  I started painting, it's actually pretty relaxing.
+
+--- Speaker 1 ---
+  That's amazing Sam, expressing yourself through art can be very therapeutic.
+  Have you noticed it helps with managing cravings or stress?
+
+--- Speaker 2 ---
+  Yeah, when I'm painting, I'm focused and calm.
+  It takes my mind off things.
+
+--- Speaker 1 ---
+  That's great to hear.
+  Finding healthy distractions is important.
+  Have you set any new goals for yourself recently?
+
+--- Speaker 2 ---
+  I want to finish a whole painting by the end of this month.
+  It's a small goal, but it keeps me motivated.
+
+--- Speaker 1 ---
+  Small goals are fantastic.
+  They add up over time. [Confidence: 0.69]
+  How about your physical health?
+  Have you been keeping up with exercise?
+
+--- Speaker 2 ---
+  I've been going for walks in the evening, it's a good way to clear my head.
+
+--- Speaker 1 ---
+  Perfect physical activity can do wonders for your mental health as well.
+  Have you experienced any cravings or triggers this week?
+
+--- Speaker 2 ---
+  Just that one rough patch I mentioned, but I handled it.
+
+--- Speaker 1 ---
+  That's impressive, Sam.
+  It's all about recognizing those moments and having strategies ready.
+  Is there anything specific you'd like to discuss or need support with right now?
+
+--- Speaker 2 ---
+  Maybe some tips on dealing with stress at work?
+  Sometimes it just feels overwhelming.
+
+--- Speaker 1 ---
+  Absolutely.
+  We can go over some techniques like mindfulness, deep breathing exercises and breaking tasks into smaller manageable chunks.
+  Sound good?
+
+--- Speaker 2 ---
+  Yeah, that would be really helpful.
+
+--- Speaker 1 ---
+  Excellent.
+  We'll work through these strategies together.
+  You're doing an amazing job, Sam.
+  Keep up the good work.
+  Let's set a few goals for this week and we'll follow up next time.
+
+--- Speaker 2 ---
+  Thanks for all your support, I really appreciate it.
+
+--- Speaker 1 ---
+  Anytime, Sam, we're in this together.
+  See you next week.
