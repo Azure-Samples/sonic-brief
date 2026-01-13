@@ -14,7 +14,7 @@ bcrypt==4.2.1
 # Update these lines in your requirements.txt
 aiohttp
 azure-identity==1.16.1
-azure-core==1.32.0
+azure-core==1.38.0
 azure-cosmos==4.8.0
 
 azure-common==1.1.28
